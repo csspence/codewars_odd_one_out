@@ -6,6 +6,11 @@ oddNum([12, 11, 24, 78, 13, 86, 28]) // => 1
 If there are no odd numbers, the function should output -1. Numbers are guaranteed to be non-negative.
 */
 
-function oddNum(arr) {
-  
+const oddNum = (arr) => {
+  for(let i = 0; i < arr.length; i++) {
+      if(arr[i] % 2 !== 0) {
+          return i;
+      }
+  }
+  return -1;
 }
